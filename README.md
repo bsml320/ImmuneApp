@@ -40,7 +40,6 @@ pip install h5py==2.10.0
 __Note: please unzip the gibbscluster.zip in the folder first, and modify the "FULL PATH" in the gibbscluster execution file__
 
 # Usage
-
 ### ImmuneApp provides two services: precise antigen presentation prediction and clinical immunopeptidomic cohorts analysis.
 
 __1__. For antigen presentation prediction, this module accept two different types of input; FASTA and Peptide. In addition, candidate HLA molecules should be specified in the predictions. For FASTA input, the peptide length(s) should be specified.
@@ -92,7 +91,6 @@ The “Discovery” module accepts two input types: “FASTA” and “Peptide�
 6. Operation buttons: Submit, reset the submission form, or access the example dataset.
 
 ### Introduction of input in immunopeptidome analysis: 
-
 1. Job identifier: Job identifier can be generated automatically or customized by the submitter. It is confidential to other users and can be used for job status monitoring and result retrieval.(See Results page).It is required.
 2. Input textarea: The user can directly copy immunopeptidomic cohorts sample data in the input box.
 3. Upload sample(s): The user can also upload immunopeptidomic cohorts sample to the server.
@@ -103,9 +101,9 @@ The “Discovery” module accepts two input types: “FASTA” and “Peptide�
 8. Operation buttons: Submit, reset the submission form, or access the example dataset.
 
 ## Results
-
 1. Analysis, statistics, and visualization for melanoma-associated samples using ImmuneApp.
 <div align=center><img src="https://bioinfo.uth.edu/iapp/github/Supplementary figure 9.jpg" width="600px"></div>
+
 2. Motif discovery and decomposition for melanoma-associated samples using ImmuneApp: 
 <div align=center><img src="https://bioinfo.uth.edu/iapp/github/Supplementary figure 10.jpg" width="600px"></div>
 
