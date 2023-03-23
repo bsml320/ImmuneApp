@@ -45,7 +45,7 @@ __Note: please unzip the gibbscluster.zip in the folder first, and modify the "F
 
 __1__. For antigen presentation prediction, this module accept two different types of input; FASTA and Peptide. In addition, candidate HLA molecules should be specified in the predictions. For FASTA input, the peptide length(s) should be specified.
 
-### Example: 
+### Example of antigen presentation prediction: 
 For __peptides input__, please uses:
 ```
 python ImmuneApp_prediction.py -f 'testdata/test_peplist.txt' -a 'HLA-A*01:01' 'HLA-A*02:01' 'HLA-A*03:01' 'HLA-B*07:02' -ap 'yes' -o 'results'
@@ -57,7 +57,7 @@ python ImmuneApp_prediction.py -fa 'testdata/test.fasta' -a 'HLA-A*01:01' 'HLA-A
 ```
 __2__. For immunopeptidome analysis, this module accept (clinical) immunopeptidomic samples as input, together with HLA molecule(s) by HLA tying tool.
 
-### Example: 
+### Example of immunopeptidome analysis: 
 For __single sample__, please uses:
 ```
 python ImmuneApp_immunopeptidomics_analysis.py -f testdata/Melanoma_tissue_sample_of_patient_5.txt -a HLA-A*01:01,HLA-A*25:01,HLA-B*08:01,HLA-B*18:01 -o results
@@ -71,6 +71,8 @@ python ImmuneApp_immunopeptidomics_analysis.py -f testdata/Melanoma_tissue_sampl
 For details of other parameters, run:
 ```
 python ImmuneApp_immunopeptidomics_analysis.py --help
+
 python ImmuneApp_prediction.py --help
 
 ```
+
