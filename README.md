@@ -1,4 +1,4 @@
-# ImmuneApp
+# ImmuneApp v1.0
 ## ImmuneApp for HLA-I epitope prediction and immunopeptidome analysis
 The selection of human leukocyte antigen (HLA) epitopes is critical for the development of cancer immunotherapy strategies and vaccines.
 Advances in liquid chromatography and mass spectrometry facilitated a new era of large-scale immunopeptidomics and improved HLA-peptide binding prediction.
@@ -22,9 +22,7 @@ Download ImmuneApp by
 ```
 git clone https://github.com/bsml320/ImmuneApp
 ```
-Installation has been tested in Linux server, CentOS Linux release 7.8.2003 (Core), with Python 3.7.
-Since the package is written in python 3x, python3x with the pip tool must be installed.
-NetBCE uses the following dependencies: numpy, scipy, pandas, h5py, keras version=2.3.1, tensorflow=1.15, seaborn, logomaker, shutil, pathlib. We highly recommend that users leave a message under the ImmuneApp issue interface (https://github.com/bsml320/ImmuneApp/issues) when encountering any installation and running problems. We will deal with it in time. You can install these packages by the following commands:
+Installation has been tested in Linux server, CentOS Linux release 7.8.2003 (Core), with Python 3.7. Since the package is written in python 3x, python3x with the pip tool must be installed. ImmuneApp uses the following dependencies: numpy, scipy, pandas, h5py, keras version=2.3.1, tensorflow=1.15, seaborn, logomaker, and shutil, pathlib. We highly recommend that users leave a message under the ImmuneApp issue interface (https://github.com/bsml320/ImmuneApp/issues) when encountering any installation and running problems. We will deal with it in time. You can install these packages by the following commands:
 ```
 conda create -n ImmuneApp python=3.7
 conda activate ImmuneApp
