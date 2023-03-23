@@ -14,3 +14,29 @@ and visualization for clinical immunopeptidomics cohorts, which includes quality
 and antigen presentation prediction via two functional modules. Through the application of ImmuneApp to multiple disease-related immunopeptidomics datasets, 
 including melanoma tumor tissues, lung, and gastric cancer biopsies, we demonstrated its utility in a clinical setting.
 ImmuneApp is freely available at https://bioinfo.uth.edu/iapp/.
+
+![image](https://github.com/BioDataStudy/NetBCE/blob/main/data/github_1.jpg)
+
+# Installation
+Download ImmuneApp by
+```
+git clone https://github.com/bsml320/ImmuneApp
+```
+Installation has been tested in Linux server, CentOS Linux release 7.8.2003 (Core), with Python 3.7.
+Since the package is written in python 3x, python3x with the pip tool must be installed.
+NetBCE uses the following dependencies: numpy, scipy, pandas, h5py, keras version=2.3.1, tensorflow=1.15, seaborn, logomaker, shutil, pathlib. We highly recommend that users leave a message under the ImmuneApp issue interface (https://github.com/bsml320/ImmuneApp/issues) when encountering any installation and running problems. We will deal with it in time. You can install these packages by the following commands:
+```
+conda create -n ImmuneApp python=3.7
+conda activate ImmuneApp
+pip install pandas
+pip install numpy
+pip install scipy
+pip install -v keras==2.3.1
+pip install -v tensorflow==1.15
+pip install seaborn
+pip install logomaker
+pip install shutil
+pip install pathlib
+pip install protobuf==3.20
+pip install h5py==2.10.0
+```
