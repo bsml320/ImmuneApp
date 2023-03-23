@@ -79,12 +79,12 @@ Researchers can run ImmuneApp online at https://bioinfo.uth.edu/iapp/. For comme
 ## Workflow of web portal
 ImmuneApp implements four main modules: “Discovery”, “Analysis”, “Results” and “Controller”. In the backend, three well-trained deep learning models (ImmuneApp_BA, ImmuneApp_EL and ImmuneApp_AP) are used for the predictions of binding affinities, ligand probabilities, and overall antigen presentation as well as immunopeptidomic cohorts analysis, respectively. The “Controller” module checks the input data format, sends the data from frontend interfaces to the backend, creates the results using models, and then provides the results on the “Results” page. We implemented both pages in a responsive manner by using the HTML5, CSS, Bootstrap3, and JavaScript. Additionally, the "Controller" is called through Ajax technology to submit jobs, retrieve data, and show results. There is no limit to the number of tasks submitted by each user. ImmuneApp can automatically handle the jobs in a queue, which allows up to 5 jobs to execute concurrently.
 
-<div align=center><img src="https://bioinfo.uth.edu/iapp/github/Supplementary figure 7.jpg" width="1500px"></div>
+<div align=center><img src="https://bioinfo.uth.edu/iapp/github/Supplementary_figure_7.jpg"></div>
 
 ## Usage
 The “Discovery” module accepts two input types: “FASTA” and “Peptide”. Users can directly copy the input data to an online submission text box. Moreover, MHC molecules and the peptide length (only FASTA input) need to be specified for running prediction. The “Analysis” module accepts clinical immunopeptidomic samples as input, together with MHC molecules. The input sample(s) can be directly copied to an online submission text box or uploaded from the users local disk. Sample identity should be specified. This module provides intuitive report for personalized analysis, statistical reports, and visualization of results for clinical immunopeptidomic cohorts.
 
-<div align=center><img src="https://bioinfo.uth.edu/iapp/github/Supplementary figure 8.jpg" width="1000px"></div>
+<div align=center><img src="https://bioinfo.uth.edu/iapp/github/Supplementary_figure_8.jpg" width="1000px"></div>
 
 ### Introduction of input in antigen presentation prediction: 
 1. Job identifier: Job identifier can be generated automatically or customized by the submitter. It is confidential to other users and can be used for job status monitoring and result retrieval.(See Results page).It is required.
@@ -106,8 +106,8 @@ The “Discovery” module accepts two input types: “FASTA” and “Peptide�
 
 ## Results
 1. Analysis, statistics, and visualization for melanoma-associated samples using ImmuneApp.
-<div align=center><img src="https://bioinfo.uth.edu/iapp/github/Supplementary figure 9.jpg" width="600px"></div>
+<div align=center><img src="https://bioinfo.uth.edu/iapp/github/Supplementary_figure_9.jpg" width="600px"></div>
 
 2. Motif discovery and decomposition for melanoma-associated samples using ImmuneApp: 
-<div align=center><img src="https://bioinfo.uth.edu/iapp/github/Supplementary figure 10.jpg" width="600px"></div>
+<div align=center><img src="https://bioinfo.uth.edu/iapp/github/Supplementary_figure_10.jpg" width="600px"></div>
 
