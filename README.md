@@ -39,7 +39,7 @@ pip install h5py==2.10.0
 ```
 # Usage
 
-__Please note: Be sure to unzip the gibbscluster.zip in the folder first, and modify the "FULL PATH" in the gibbscluster execution file__
+__Note: please unzip the gibbscluster.zip in the folder first, and modify the "FULL PATH" in the gibbscluster execution file__
 
 Please cd to the NetBCE/prediction/ folder which contains predict.py.
 Example: 
