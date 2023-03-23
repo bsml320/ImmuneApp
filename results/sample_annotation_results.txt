@@ -1,0 +1,11 @@
+sample	total peptides	allele	strong binders	weak binders	non-binders	strong binders(%)	weak binders(%)	non-binders(%)
+Melanoma_tissue_sample_of_patient_5.txt	4155	HLA-A*01:01	623	207	3325	15.0	5.0	80.0
+Melanoma_tissue_sample_of_patient_5.txt	4155	HLA-A*25:01	1136	379	2640	27.3	9.1	63.5
+Melanoma_tissue_sample_of_patient_5.txt	4155	HLA-B*08:01	1053	223	2879	25.3	5.4	69.3
+Melanoma_tissue_sample_of_patient_5.txt	4155	HLA-B*18:01	771	152	3232	18.6	3.7	77.8
+Melanoma_tissue_sample_of_patient_8.txt	5481	HLA-A*01:01	1001	108	4372	18.3	2.0	79.8
+Melanoma_tissue_sample_of_patient_8.txt	5481	HLA-A*03:01	1368	275	3838	25.0	5.0	70.0
+Melanoma_tissue_sample_of_patient_8.txt	5481	HLA-B*07:02	1827	153	3501	33.3	2.8	63.9
+Melanoma_tissue_sample_of_patient_8.txt	5481	HLA-B*08:01	956	599	3926	17.4	10.9	71.6
+Melanoma_tissue_sample_of_patient_8.txt	5481	HLA-C*07:02	151	290	5040	2.8	5.3	92.0
+Melanoma_tissue_sample_of_patient_8.txt	5481	HLA-C*07:01	190	398	4893	3.5	7.3	89.3

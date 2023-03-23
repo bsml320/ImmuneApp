@@ -1,0 +1,3 @@
+sample	n_peptides	n_peptides_8-13_mers	length_score	binding_score	lengths	binder_counts
+Melanoma_tissue_sample_of_patient_5.txt	4155	4155	1.0	0.85	8:96,9:3007,10:718,11:334	Strong:3303,Weak:226,Non-binder:626
+Melanoma_tissue_sample_of_patient_8.txt	5481	5481	1.0	0.94	8:46,9:3350,10:1246,11:839	Strong:4746,Weak:394,Non-binder:341
