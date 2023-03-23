@@ -79,11 +79,31 @@ Researchers can run ImmuneApp online at https://bioinfo.uth.edu/iapp/. For comme
 
 ImmuneApp implements four main modules: “Discovery”, “Analysis”, “Results” and “Controller”. In the backend, three well-trained deep learning models (ImmuneApp_BA, ImmuneApp_EL and ImmuneApp_AP) are used for the predictions of binding affinities, ligand probabilities, and overall antigen presentation as well as immunopeptidomic cohorts analysis, respectively. The “Controller” module checks the input data format, sends the data from frontend interfaces to the backend, creates the results using models, and then provides the results on the “Results” page. We implemented both pages in a responsive manner by using the HTML5, CSS, Bootstrap3, and JavaScript. Additionally, the "Controller" is called through Ajax technology to submit jobs, retrieve data, and show results. There is no limit to the number of tasks submitted by each user. ImmuneApp can automatically handle the jobs in a queue, which allows up to 5 jobs to execute concurrently.
 
-<div align=center><img src="https://bioinfo.uth.edu/iapp/github/Supplementary figure 7.jpg" width="1200px"></div>
+<div align=center><img src="https://bioinfo.uth.edu/iapp/github/Supplementary figure 7.jpg" width="1500px"></div>
 
 The “Discovery” module accepts two input types: “FASTA” and “Peptide”. Users can directly copy the input data to an online submission text box. Moreover, MHC molecules and the peptide length (only FASTA input) need to be specified for running prediction. The “Analysis” module accepts clinical immunopeptidomic samples as input, together with MHC molecules. The input sample(s) can be directly copied to an online submission text box or uploaded from the users local disk. Sample identity should be specified. This module provides intuitive report for personalized analysis, statistical reports, and visualization of results for clinical immunopeptidomic cohorts.
 
 <div align=center><img src="https://bioinfo.uth.edu/iapp/github/Supplementary figure 8.jpg" width="1000px"></div>
+
+### Introduction of input in antigen presentation prediction: 
+1. Job identifier: Job identifier can be generated automatically or customized by the submitter. It is confidential to other users and can be used for job status monitoring and result retrieval.(See Results page).It is required.
+2. Input type: Provides two input formats, including the classic protein FASTA format and direct input of multiple peptides.
+3. Input textarea: The user can directly copy the protein sequence or peptide data in the input box.
+4. Peptide length(AAs): When the input method is Fasta format. The user needs to select one or more peptide lengths so that the server can construct a library of candidate antigen peptides.
+5. HLA alleles: The ImmuneApp 1.0 server predicts peptides binding to more than 10,000 human MHC molecule. We constructed a classification tree of HLA. Users can quickly retrieve and submit candidate HLA alleles through the search box and tree map. Each submitted task is allowed to select up to 20 HLA alleles.
+6. Operation buttons: Submit, reset the submission form, or access the example dataset.
+
+### Introduction of input in immunopeptidome analysis: 
+
+1. Job identifier: Job identifier can be generated automatically or customized by the submitter. It is confidential to other users and can be used for job status monitoring and result retrieval.(See Results page).It is required.
+2. Input textarea: The user can directly copy immunopeptidomic cohorts sample data in the input box.
+3. Upload sample(s): The user can also upload immunopeptidomic cohorts sample to the server.
+4. Sample info: The user needs to provide identification information for each sample.
+5. HLA alleles: The ImmuneApp 1.0 server predicts peptides binding to more than 10,000 human MHC molecule. We constructed a classification tree of HLA. Users can quickly retrieve and submit candidate HLA alleles through the search box and tree map. Each submitted task is allowed to select up to 6 HLA alleles.
+6. Operation buttons: Upload immunopeptidomic cohorts sample to the server by this button
+7. loaded data: A list of immunopeptidomic cohorts uploaded by users for analysis.
+8. Operation buttons: Submit, reset the submission form, or access the example dataset.
+
 
 
 
