@@ -41,6 +41,9 @@ pip install h5py==2.10.0
 
 __Note: please unzip the gibbscluster.zip in the folder first, and modify the "FULL PATH" in the gibbscluster execution file__
 
+## ImmuneApp provides two services: __precise antigen presentation prediction__ and __clinical immunopeptidomic cohorts analysis__.
+
+for 
 Please cd to the NetBCE/prediction/ folder which contains predict.py.
 Example: 
 ```
