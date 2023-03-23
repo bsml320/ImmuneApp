@@ -14,7 +14,7 @@ and antigen presentation prediction via two functional modules. Through the appl
 including melanoma tumor tissues, lung, and gastric cancer biopsies, we demonstrated its utility in a clinical setting.
 ImmuneApp is freely available at https://bioinfo.uth.edu/iapp/.
 
-<img src="https://bioinfo.uth.edu/iapp/github/Figure1.jpg" width="800px">
+<div align=center><img src="https://bioinfo.uth.edu/iapp/github/Figure1.jpg" width="800px"></div>
 
 # Installation
 Download ImmuneApp by
