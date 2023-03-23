@@ -1,4 +1,3 @@
-# ImmuneApp v1.0
 ## ImmuneApp for HLA-I epitope prediction and immunopeptidome analysis
 The selection of human leukocyte antigen (HLA) epitopes is critical for the development of cancer immunotherapy strategies and vaccines.
 Advances in liquid chromatography and mass spectrometry facilitated a new era of large-scale immunopeptidomics and improved HLA-peptide binding prediction.
@@ -15,7 +14,7 @@ and antigen presentation prediction via two functional modules. Through the appl
 including melanoma tumor tissues, lung, and gastric cancer biopsies, we demonstrated its utility in a clinical setting.
 ImmuneApp is freely available at https://bioinfo.uth.edu/iapp/.
 
-![image](https://bioinfo.uth.edu/iapp/github/Figure1.jpg)
+<img src="https://bioinfo.uth.edu/iapp/github/Figure1.jpg" width="60px">
 
 # Installation
 Download ImmuneApp by
