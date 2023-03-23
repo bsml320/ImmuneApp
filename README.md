@@ -39,9 +39,9 @@ pip install h5py==2.10.0
 ```
 # Usage
 
-__Note: please unzip the gibbscluster.zip in the folder first, and modify the "FULL PATH" in the gibbscluster execution file__
+### ImmuneApp provides two services: __precise antigen presentation prediction__ and __clinical immunopeptidomic cohorts analysis__.
 
-ImmuneApp provides two services: __precise antigen presentation prediction__ and __clinical immunopeptidomic cohorts analysis__.
+__Note: please unzip the gibbscluster.zip in the folder first, and modify the "FULL PATH" in the gibbscluster execution file__
 
 for antigen presentation prediction, this module accept two different types of input; FASTA and Peptide. In addition, candidate HLA molecules should be specified in the predictions. For FASTA input, the peptide length(s) should be specified.
 
