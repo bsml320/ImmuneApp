@@ -110,9 +110,9 @@ The “Discovery” module accepts two input types: “FASTA” and “Peptide�
 
 ### analysis, statistics, and visualization for melanoma-associated samples using ImmuneApp.
 
-<div align=center><img src="https://bioinfo.uth.edu/iapp/github/Supplementary figure 9.jpg" width="1000px"></div>
+<div align=center><img src="https://bioinfo.uth.edu/iapp/github/Supplementary figure 9.jpg" width="800px"></div>
 
 ### Motif discovery and decomposition for melanoma-associated samples using ImmuneApp: 
 
-<div align=center><img src="https://bioinfo.uth.edu/iapp/github/Supplementary figure 10.jpg" width="1000px"></div>
+<div align=center><img src="https://bioinfo.uth.edu/iapp/github/Supplementary figure 10.jpg" width="800px"></div>
 
