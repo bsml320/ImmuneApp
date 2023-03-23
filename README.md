@@ -37,3 +37,4 @@ pip install pathlib
 pip install protobuf==3.20
 pip install h5py==2.10.0
 ```
+—__Please note: Be sure to unzip the gibbscluster.zip in the folder first, and modify the "FULL PATH" in the gibbscluster execution file__
