@@ -43,7 +43,7 @@ __Note: please unzip the gibbscluster.zip in the folder first, and modify the "F
 
 ### ImmuneApp provides two services: precise antigen presentation prediction and clinical immunopeptidomic cohorts analysis.
 
-For antigen presentation prediction, this module accept two different types of input; FASTA and Peptide. In addition, candidate HLA molecules should be specified in the predictions. For FASTA input, the peptide length(s) should be specified.
+__1__. For antigen presentation prediction, this module accept two different types of input; FASTA and Peptide. In addition, candidate HLA molecules should be specified in the predictions. For FASTA input, the peptide length(s) should be specified.
 
 ### Example: 
 For __peptides input__, please uses:
@@ -55,8 +55,22 @@ For __FASTA input__, please uses:
 ```
 python ImmuneApp_prediction.py -fa 'testdata/test.fasta' -a 'HLA-A*01:01' 'HLA-A*02:01' 'HLA-A*03:01' 'HLA-B*07:02' -ap 'yes' -o 'results'
 ```
+__2__. For immunopeptidome analysis, this module accept (clinical) immunopeptidomic samples as input, together with HLA molecule(s) by HLA tying tool.
+
+### Example: 
+For __single sample__, please uses:
+```
+python ImmuneApp_immunopeptidomics_analysis.py -f testdata/Melanoma_tissue_sample_of_patient_5.txt -a HLA-A*01:01,HLA-A*25:01,HLA-B*08:01,HLA-B*18:01 -o results
+```
+
+For __multiple samples__, separate the different sample names or HLA alleles with spaces, uses:
+```
+python ImmuneApp_immunopeptidomics_analysis.py -f testdata/Melanoma_tissue_sample_of_patient_5.txt testdata/Melanoma_tissue_sample_of_patient_8.txt -a HLA-A*01:01,HLA-A*25:01,HLA-B*08:01,HLA-B*18:01 HLA-A*01:01,HLA-A*03:01,HLA-B*07:02,HLA-B*08:01,HLA-C*07:02,HLA-C*07:01 -o results
+```
 
 For details of other parameters, run:
 ```
-python NetBCE_prediction.py --help
+python ImmuneApp_immunopeptidomics_analysis.py --help
+python ImmuneApp_prediction.py --help
+
 ```
