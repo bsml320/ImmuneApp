@@ -41,15 +41,21 @@ pip install h5py==2.10.0
 
 __Note: please unzip the gibbscluster.zip in the folder first, and modify the "FULL PATH" in the gibbscluster execution file__
 
-## ImmuneApp provides two services: __precise antigen presentation prediction__ and __clinical immunopeptidomic cohorts analysis__.
+ImmuneApp provides two services: __precise antigen presentation prediction__ and __clinical immunopeptidomic cohorts analysis__.
 
-for 
-Please cd to the NetBCE/prediction/ folder which contains predict.py.
-Example: 
+for antigen presentation prediction, this module accept two different types of input; FASTA and Peptide. In addition, candidate HLA molecules should be specified in the predictions. For FASTA input, the peptide length(s) should be specified.
+
+## Example: 
+For __peptides input__, please uses:
 ```
-cd NetBCE/prediction/
-python NetBCE_prediction.py -f ../testdata/test.fasta -o ../result/test_result
+python ImmuneApp_prediction.py -f 'testdata/test_peplist.txt' -a 'HLA-A*01:01' 'HLA-A*02:01' 'HLA-A*03:01' 'HLA-B*07:02' -ap 'yes' -o 'results'
 ```
+
+For __FASTA input__, please uses:
+```
+python ImmuneApp_prediction.py -fa 'testdata/test.fasta' -a 'HLA-A*01:01' 'HLA-A*02:01' 'HLA-A*03:01' 'HLA-B*07:02' -ap 'yes' -o 'results'
+```
+
 For details of other parameters, run:
 ```
 python NetBCE_prediction.py --help
