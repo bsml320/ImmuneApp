@@ -84,7 +84,7 @@ ImmuneApp implements four main modules: “Discovery”, “Analysis”, “Resu
 ## Usage
 The “Discovery” module accepts two input types: “FASTA” and “Peptide”. Users can directly copy the input data to an online submission text box. Moreover, MHC molecules and the peptide length (only FASTA input) need to be specified for running prediction. The “Analysis” module accepts clinical immunopeptidomic samples as input, together with MHC molecules. The input sample(s) can be directly copied to an online submission text box or uploaded from the users local disk. Sample identity should be specified. This module provides intuitive report for personalized analysis, statistical reports, and visualization of results for clinical immunopeptidomic cohorts.
 
-<div align=center><img src="https://bioinfo.uth.edu/iapp/github/Supplementary_figure_8.jpg" width="1000px"></div>
+<div align=center><img src="https://bioinfo.uth.edu/iapp/github/Supplementary_figure_8.jpg" width="800px"></div>
 
 ### Introduction of input in antigen presentation prediction: 
 1. Job identifier: Job identifier can be generated automatically or customized by the submitter. It is confidential to other users and can be used for job status monitoring and result retrieval.(See Results page).It is required.
