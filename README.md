@@ -66,7 +66,10 @@ For details of other parameters, run:
 ```
 python ImmuneApp_immunopeptidomics_analysis.py --help
 
-python ImmuneApp_prediction.py --help
+python ImmuneApp_presentation_prediction.py --help
+
+python ImmuneApp_immunogenicity_prediction.py --help
+
 ```
 # Web Server
 Researchers can run ImmuneApp online at https://bioinfo.uth.edu/iapp/. For commercial usage inquiries, please contact the authors. 
