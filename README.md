@@ -24,24 +24,24 @@ pip install pathlib
 pip install protobuf==3.20
 pip install h5py==2.10.0
 ```
-### Note: please unzip the gibbscluster-2.0f.Linux.tar.gz in the folder first, and modify the "FULL PATH" in the gibbscluster execution file__
+### Note: please unzip the gibbscluster-2.0f.Linux.tar.gz in the folder first, and modify the "FULL PATH" in the gibbscluster execution file
 
 # Usage
-### ImmuneApp provides two services: precise antigen presentation prediction and clinical immunopeptidomic cohorts analysis.
+### ImmuneApp provides three services: prediction of antigen presentation, scoring for neoepitope immunogenicity, and immunopeptidomics analysis, with enhanced precision.
 
 __1__. For antigen presentation prediction, this module accept two different types of input; FASTA and Peptide. In addition, candidate HLA molecules should be specified in the predictions. For FASTA input, the peptide length(s) should be specified.
 
 ### Example of antigen presentation prediction: 
 For __peptides input__, please uses:
 ```
-python ImmuneApp_prediction.py -f 'testdata/test_peplist.txt' -a 'HLA-A*01:01' 'HLA-A*02:01' 'HLA-A*03:01' 'HLA-B*07:02' -ap 'yes' -o 'results'
+python ImmuneApp_presentation_prediction.py -f 'testdata/test_peplist.txt' -a 'HLA-A*01:01' 'HLA-A*02:01' 'HLA-A*03:01' 'HLA-B*07:02' -b -o 'results'
 ```
 
 For __FASTA input__, please uses:
 ```
-python ImmuneApp_prediction.py -fa 'testdata/test.fasta' -a 'HLA-A*01:01' 'HLA-A*02:01' 'HLA-A*03:01' 'HLA-B*07:02' -ap 'yes' -o 'results'
+python ImmuneApp_presentation_prediction.py -fa 'testdata/test.fasta' -a 'HLA-A*01:01' 'HLA-A*02:01' 'HLA-A*03:01' 'HLA-B*07:02' -b -o 'results'
 ```
-__2__. For immunopeptidome analysis, this module accept (clinical) immunopeptidomic samples as input, together with HLA molecule(s) by HLA tying tool.
+__2__. For immunopeptidome analysis, this module accept immunopeptidomic samples as input, together with HLA molecule(s) by HLA tying tool.
 
 ### Example of immunopeptidome analysis: 
 For __single sample__, please uses:
@@ -52,6 +52,14 @@ python ImmuneApp_immunopeptidomics_analysis.py -f testdata/Melanoma_tissue_sampl
 For __multiple samples__, separate the different sample names or HLA alleles with spaces, uses:
 ```
 python ImmuneApp_immunopeptidomics_analysis.py -f testdata/Melanoma_tissue_sample_of_patient_5.txt testdata/Melanoma_tissue_sample_of_patient_8.txt -a HLA-A*01:01,HLA-A*25:01,HLA-B*08:01,HLA-B*18:01 HLA-A*01:01,HLA-A*03:01,HLA-B*07:02,HLA-B*08:01,HLA-C*07:02,HLA-C*07:01 -o results
+```
+
+__3__. For scoring for neoepitope immunogenicity, this module accept peptides as input, together with HLA molecule(s).
+
+### Example of neoepitope immunogenicity scoring: 
+For __single sample__, please uses:
+```
+python ImmuneApp_immunogenicity_prediction.py -f testdata/test_immunogenicity.txt -a 'HLA-A*01:01' 'HLA-A*02:01' 'HLA-A*03:01' 'HLA-B*07:02' -o results
 ```
 
 For details of other parameters, run:
