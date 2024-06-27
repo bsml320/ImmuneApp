@@ -57,7 +57,7 @@ python ImmuneApp_immunopeptidomics_analysis.py -f testdata/Melanoma_tissue_sampl
 __3__. For scoring for neoepitope immunogenicity, this module accept peptides as input, together with HLA molecule(s).
 
 ### Example of neoepitope immunogenicity scoring: 
-For __single sample__, please uses:
+For __peptides input__, please uses:
 ```
 python ImmuneApp_immunogenicity_prediction.py -f testdata/test_immunogenicity.txt -a 'HLA-A*01:01' 'HLA-A*02:01' 'HLA-A*03:01' 'HLA-B*07:02' -o results
 ```
