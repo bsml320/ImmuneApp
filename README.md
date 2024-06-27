@@ -24,7 +24,7 @@ pip install pathlib
 pip install protobuf==3.20
 pip install h5py==2.10.0
 ```
-__Note: please unzip the gibbscluster-2.0f.Linux.tar.gz in the folder first, and modify the "FULL PATH" in the gibbscluster execution file__
+### Note: please unzip the gibbscluster-2.0f.Linux.tar.gz in the folder first, and modify the "FULL PATH" in the gibbscluster execution file__
 
 # Usage
 ### ImmuneApp provides two services: precise antigen presentation prediction and clinical immunopeptidomic cohorts analysis.
