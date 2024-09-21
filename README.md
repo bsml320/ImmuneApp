@@ -24,15 +24,11 @@ pip install protobuf==3.20
 pip install h5py==2.10.0
 ```
 ### Note: please unzip the "gibbscluster-2.0f.Linux.tar.gz" in any folder, and make sure the user has the read and execute permission on the gibbscluster program.
-### After unziping, the user gets the gibbscluster-2.0 file. Modify line 14 of the "gibbscluster" file in this directory -Set FULL PATH to the GibbsCluster 2.0 directory (mandatory)
-### Please modify the “GIBBSCLUSTER” parameter in line 555 of the file “ImmuneApp_immunopeptidomics_analysis.py” to the full path of gibbscluster execution file.
 ```
 cd ImmuneApp/
 tar -zxvf gibbscluster-2.0f.Linux.tar.gz
-Change line 14 of the "gibbscluster" file in the directory of gibbscluster-2.0
-Change the “GIBBSCLUSTER” parameter in line 555 of the file “ImmuneApp_immunopeptidomics_analysis.py” to the full path of gibbscluster execution file
 ```
-### Note: .Set FULL PATH to the GibbsCluster 2.0 directory (mandatory)
+### After unziping, the user gets the gibbscluster-2.0 file. Modify line 14 of the "gibbscluster" file in this directory -Set FULL PATH to the GibbsCluster 2.0 directory (mandatory). Finally, please modify the “GIBBSCLUSTER” parameter in line 555 of the file “ImmuneApp_immunopeptidomics_analysis.py” to the full path of gibbscluster execution file.
 
 # Usage
 ### ImmuneApp provides three services: prediction of antigen presentation, scoring for neoepitope immunogenicity, and immunopeptidomics analysis, with enhanced precision.
@@ -42,6 +38,7 @@ __1__. For antigen presentation prediction, this module accept two different typ
 ### Example of antigen presentation prediction: 
 For __peptides input__, please uses:
 ```
+cd ImmuneApp/
 python ImmuneApp_presentation_prediction.py -f 'testdata/test_peplist.txt' -a 'HLA-A*01:01' 'HLA-A*02:01' 'HLA-A*03:01' 'HLA-B*07:02' -b -o 'results'
 ```
 
