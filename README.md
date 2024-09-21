@@ -28,7 +28,7 @@ pip install h5py==2.10.0
 cd ImmuneApp/
 tar -zxvf gibbscluster-2.0f.Linux.tar.gz
 ```
-### After unziping, the user gets the gibbscluster-2.0 software. Modify line 14 of the "gibbscluster" file in the directory of gibbscluster-2.0  - Set FULL PATH to the GibbsCluster 2.0 directory (mandatory). 
+### Once the file is unzipped, the user gets the gibbscluster-2.0 software. Modify line 14 of the "gibbscluster" file in the directory of gibbscluster-2.0  - Set FULL PATH to the GibbsCluster 2.0 directory (mandatory). 
 ### Finally, please modify the “GIBBSCLUSTER” parameter in line 555 of the file “ImmuneApp_immunopeptidomics_analysis.py” to the full path of gibbscluster execution file.
 
 # Usage
