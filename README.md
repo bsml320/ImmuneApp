@@ -23,8 +23,16 @@ pip install pathlib
 pip install protobuf==3.20
 pip install h5py==2.10.0
 ```
-### Note: please unzip the "gibbscluster-2.0f.Linux.tar.gz" in any folder, and make sure the user has the read and execute permission on the gibbscluster program, then modify the “GIBBSCLUSTER” parameter in line 555 of the file “ImmuneApp_immunopeptidomics_analysis.py” to the path of gibbscluster execution file.
-
+### Note: please unzip the "gibbscluster-2.0f.Linux.tar.gz" in any folder, and make sure the user has the read and execute permission on the gibbscluster program.
+### After unziping, the user gets the gibbscluster-2.0 file. Modify line 14 of the "gibbscluster" file in this directory -Set FULL PATH to the GibbsCluster 2.0 directory (mandatory)
+### Please modify the “GIBBSCLUSTER” parameter in line 555 of the file “ImmuneApp_immunopeptidomics_analysis.py” to the full path of gibbscluster execution file.
+```
+cd ImmuneApp/
+tar -zxvf gibbscluster-2.0f.Linux.tar.gz
+Change line 14 of the "gibbscluster" file in the directory of gibbscluster-2.0
+Change the “GIBBSCLUSTER” parameter in line 555 of the file “ImmuneApp_immunopeptidomics_analysis.py” to the full path of gibbscluster execution file
+```
+### Note: .Set FULL PATH to the GibbsCluster 2.0 directory (mandatory)
 
 # Usage
 ### ImmuneApp provides three services: prediction of antigen presentation, scoring for neoepitope immunogenicity, and immunopeptidomics analysis, with enhanced precision.
