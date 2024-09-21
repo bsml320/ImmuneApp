@@ -12,14 +12,13 @@ Installation has been tested in Linux server, CentOS Linux release 7.8.2003 (Cor
 ```
 conda create -n ImmuneApp python=3.7
 conda activate ImmuneApp
-pip install pandas
-pip install numpy
-pip install scipy
-pip install -v keras==2.3.1
-pip install -v tensorflow==1.15
-pip install seaborn
-pip install logomaker
-pip install shutil
+pip install numpy==1.20.0
+pip install pandas==1.3.3 
+pip install scipy==1.7.1
+pip install keras==2.3.1
+pip install tensorflow==1.15
+pip install seaborn==0.11.2
+pip install logomaker==0.8
 pip install pathlib
 pip install protobuf==3.20
 pip install h5py==2.10.0
