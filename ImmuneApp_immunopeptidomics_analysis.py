@@ -551,7 +551,7 @@ def main(args):
     not_enough_peptides = []
 
     # current_path = os.path.abspath(os.path.dirname(__file__))
-    # GIBBSCLUSTER = current_path + '/gibbscluster/gibbscluster'
+    # "GIBBSCLUSTER" - Please change this parameter to the execution path of gibbscluster
     GIBBSCLUSTER = '/public/home/hxu6/projects/HLA_Prediction/python_202309/python_202309_old_server/iapp_share/gibbscluster/gibbscluster'
 
     mk_folder(tmp_folder, sample_info, sample_alleles)
